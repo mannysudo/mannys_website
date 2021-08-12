@@ -18,7 +18,7 @@ export const mobilePortfolio = [
     id: 1,
     title: "Calculator App",
     img: '/media/calculator.svg',
-    link: '',
+    link: 'https://expo.dev/@mannynpm/stack_calculator',
   },
   // {
   //   id: 2,

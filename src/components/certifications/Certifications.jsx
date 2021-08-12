@@ -33,11 +33,12 @@ export default function Certifications() {
     <div className="certifications" id="certifications">
       <div className="left">
         <div className="container">
-          <h2>An Ever-Learning Journey</h2>
+          <h4>An Ever-Learning Journey</h4>
           <p>
-            I belive learning is one of the most important aspects of life. In
-            my journey as a recent graduate and beginner developer, learning
-            displays my ambition to adapt and determination to succeed.
+            I believe learning is one of the most powerful forces in life and one that certainly has no end.
+            In my journey as a beginner developer, my commitment to
+            continuously learn displays my ambition to grow professionally and 
+            contribute to the software engineering field. 
           </p>
         </div>
       </div>

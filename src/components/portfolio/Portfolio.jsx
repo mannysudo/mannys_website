@@ -34,18 +34,15 @@ export default function Portfolio() {
     <div className="portfolio" id="portfolio">
       <div className="left">
         <div className="container">
-            {/* <h2>My Works</h2>
-            <p>
-                Some of my work includes business websites as well as simple mobile applications.
-                I currently use the MERN stack and look forward to adding more projects to this list!
-            </p> */}
-            <h4>My Fullstack developer skills include the following:</h4>
+            <h4>
+              My fullstack developer skills include the following:
+            </h4>
             <ul className='langnames'>
-                <li>Python | Node.js | Bash | C++ | JavaScript | HTML | CSS | SCSS</li>
+                <li>Python | C++ | Bash | JavaScript | HTML | CSS | SCSS | JSON</li>
                 <li>AWS | Google Cloud Platform</li>
                 <li>React | React Native</li>
                 <li>Git | Github</li>
-                <li>REST-APIs | Express | MongoDB</li>
+                <li>REST-APIs | Node.js | Express | MongoDB</li>
             </ul>
         </div>
       </div>

@@ -14,20 +14,21 @@
       width: 90%;
       height: 90%;
       display: flex;
-      align-items: center;
+      align-items: left;
       justify-content: center;
       flex-direction: column;
-      //   background-color: gray;
 
-      h2 {
-        font-size: 25px;
-        padding: 5px;
+      h4 {
+        text-align: left;
+        padding-top: 30px;
+        padding-bottom: 5px;
+        font-size: 20px;
+        margin-bottom: 8px;
         overflow-y: hidden;
-      }
+    }
 
       p {
         text-align: left;
-        padding: 5px;
         font-size: 15px;
         overflow-y: hidden;
       }
