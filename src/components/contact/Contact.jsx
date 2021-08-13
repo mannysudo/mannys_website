@@ -7,24 +7,24 @@ export default function Contact() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setStatus("Sending");
+    setStatus("Feature Under Work");
 
-    const { name, email, message } = e.target.elements;
-    let eDetails = {
-      name: name.value,
-      email: email.value,
-      message: message.value,
-    };
-    let response = await fetch("http://localhost:5000/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "applications/json;charset=utf-8",
-      },
-      body: JSON.stringify(eDetails),
-    });
-    setStatus("Submit");
-    let result = await response.json();
-    alert(result.status);
+    // const { name, email, message } = e.target.elements;
+    // let eDetails = {
+    //   name: name.value,
+    //   email: email.value,
+    //   message: message.value,
+    // };
+    // let response = await fetch("http://localhost:5000/contact", {
+    //   method: "POST",
+    //   headers: {
+    //     "Content-Type": "applications/json;charset=utf-8",
+    //   },
+    //   body: JSON.stringify(eDetails),
+    // });
+    // setStatus("Submit");
+    // let result = await response.json();
+    // alert(result.status);
   };
 
   return (
@@ -46,6 +46,10 @@ export default function Contact() {
         <div className="container">
           <form onSubmit={handleSubmit}>
             <h4>Let's connect!</h4>
+            <h5>
+              This feature is in the works and will be coming soon!
+              In the meantime, you can send me a message at martinezm731@outlook.com!
+            </h5>
             <div>
               <input type="email" id="email" placeholder="EMAIL" required />
             </div>
