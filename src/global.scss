@@ -3,3 +3,10 @@ $mainColorB: black;
 $mainColorW: white;
 $mainColorG: rgb(177, 185, 194);
 
+$width: 800px;
+
+@mixin mobile {
+    @media (max-width: #{$width}) {
+        @content 
+    }
+}
