@@ -18,7 +18,7 @@ export default function Intro() {
       <div className="right">
         <div className="wrapper">
           <h1>Manuel Martinez</h1>
-          <h2>Freelancer Software Developer</h2>
+          <h2>Software Developer</h2>
         </div>
         <a href="#portfolio">
           <img src="/media/downarrow0.svg" alt="" />

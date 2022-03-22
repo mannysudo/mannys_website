@@ -3,29 +3,6 @@ import "./contact.scss";
 import { contactsTabs } from "../../data";
 
 export default function Contact() {
-  const [status, setStatus] = useState("Submit");
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setStatus("Feature Under Work");
-
-    // const { name, email, message } = e.target.elements;
-    // let eDetails = {
-    //   name: name.value,
-    //   email: email.value,
-    //   message: message.value,
-    // };
-    // let response = await fetch("http://localhost:5000/contact", {
-    //   method: "POST",
-    //   headers: {
-    //     "Content-Type": "applications/json;charset=utf-8",
-    //   },
-    //   body: JSON.stringify(eDetails),
-    // });
-    // setStatus("Submit");
-    // let result = await response.json();
-    // alert(result.status);
-  };
 
   return (
     <div className="contact" id="contact">
@@ -44,19 +21,18 @@ export default function Contact() {
       <div className="right">
         <h1>Contact</h1>
         <div className="container">
-          <form onSubmit={handleSubmit}>
-            <h4>Let's connect!</h4>
-            <h5>
-              This feature is in the works and will be coming soon!
-              In the meantime, you can send me a message at martinezm731@outlook.com!
-            </h5>
-            <div>
-              <input type="email" id="email" placeholder="EMAIL" required />
+          <form>
+            <h4>Let's get in touch!</h4>
+            <h5>Connect with me on LinkedIn</h5>
+            <div className="container">
+              {contactsTabs.map((f) => (
+                <div key={f.id} className="iconSquare">
+                  <a className="icon" href={f.link}>
+                    <img src={f.img} alt="" />
+                  </a>
+                </div>
+              ))}
             </div>
-            <div>
-              <textarea id="message" placeholder="MESSAGE" required />
-            </div>
-            <button type="submit">{status}</button>
           </form>
         </div>
       </div>
